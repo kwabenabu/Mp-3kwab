@@ -1,162 +1,190 @@
 /* Global Reset */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  color: #001b2e;
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    color: #001b2e;
 }
 
-/* General Layout */
-#page-wrapper {
-  width: 100vw;
-  margin: 0 auto;
-  text-align: center;
-  background-color: #294c60;
-  max-width: 90vw;
+/* Page Wrapper - Responsive with margins */
+#page-wrapper{
+    width: 80vw;
+    margin: 0 auto;
+    text-align: center;
+    background-color: #294c60;
+    max-width: 90vw;
 }
 
-#container {
-  display: flex;
-  flex-direction: row;
-  max-width: 100%;
-  background-color: #adb6c4;
-  box-sizing: border-box;
+/* Container */
+#container{
+    display: flex;
+    flex-direction: row;
+    max-width:100%;
+    background-color: #adb6c4;
+    box-sizing: border-box;
 }
 
-main {
-  width: 70%;
-  justify-content: space-between;
+/* Main - Responsive requirements */
+main{
+    width: 70%;
+    height: 100vh;
+    justify-content: space-between;
 }
 
-/* Header + Footer */
-header h1 {
-  text-align: left;
-  color: #001b2e;
-  font-size: 10vw;
+/* Header */
+header h1{
+    text-align: left;
+    color: #001b2e;
+    font-size: 10vw;
 }
 
-footer p {
-  background-color: #001b2e;
-  color: #ffefd3;
-  text-align: center;
-  padding: 1vh 0;
-  font-size: 3vw;
+/* Footer */
+footer p{
+    background-color: #001b2e;
+    color: #ffefd3;
+    text-align: center;
+    padding: 1vh 0;
+    font-size: 3vw;
 }
 
-/* Navigation */
-#sally {
-  background-color: #294c60;
-  text-align: center;
-  width: 30%;
-  display: flex;
-  justify-content: center;
-  overflow: hidden;
-  padding: 1vh;
+/* Navigation - Responsive requirements */
+#sally{
+    background-color: #294c60;
+    text-align: center;
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    padding: 1vh;
 }
 
 #sally ul {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-  margin: 0 auto;
-  padding-left: 0;
-  list-style-type: none;
-  max-width: 100%;
-  overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+    padding-left: 0;
+    list-style-type: none;
+    max-width: 100%;
+    overflow: hidden;
 }
 
-#sally li {
-  border: 5px solid #001b2e;
-  border-radius: 50%;
-  font-size: 1vw;
-  padding: 2%;
-  margin: 2vh auto;
-  width: auto;
-  max-width: 90%;
-  display: flex;
-  flex-shrink: 0;
-  word-wrap: break-word;
-  overflow-wrap: break-word;
+#sally li{
+    border: 5px solid #001b2e;
+    border-radius: 50%;
+    font-size: 1vw;
+    padding: 2%;
+    margin: 2vh auto;
+    width: auto;
+    max-width: 90%;
+    display: flex;
+    flex-shrink: 0;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
 }
 
-nav a {
-  display: block;
-  font-size: calc(16px);
-  text-decoration: none;
-  color: #ffefd3;
-  word-wrap: break-word;
-  overflow-wrap: break-word;
-  text-align: center;
+nav a{
+    display: block;
+    font-size: calc(16px);
+    text-decoration: none;
+    color: #ffefd3;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    text-align: center;
+}
+
+a{
+    text-decoration: none;
 }
 
 /* Home */
-#kwabresume {
-  justify-content: center;
-  align-items: center;
-  display: flex;
-  flex-direction: column;
+#kwabresume { 
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
 }
 
-#kwabresume img {
-  width: 20vw;
-  height: auto;
-  display: block;
-  margin: 2vh auto;
+#kwabresume img{
+    width: 20vw;
+    max-width: 300px;
+    height: auto;
+    display: block;
+    margin: 2vh auto;
+    overflow: hidden;
 }
 
 /* Education */
-#ednav {
-  background-color: #001b2e;
-  text-align: center;
-  display: flex;
-  justify-content: center;
+#ednav{
+    height: auto;
+    background-color: #001b2e;
+    text-align: center;
+    display: flex;
+    justify-content: center;
 }
 
-#ednav ul {
-  padding-left: 0;
-  width: 100%;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  list-style-type: none;
+#ednav ul{
+    padding-left: 0;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    list-style-type: none;
 }
 
-#ednav li {
-  border: 5px solid black;
-  width: auto;
-  margin: 1%;
-  padding: 1.2vw;
-  text-align: center;
-  font-weight: bold;
-  border-radius: 0.5vw;
-  color: #ffefd3;
+#ednav li{
+    border: 5px solid black; 
+    width: auto;
+    margin: 1%;
+    padding: 1.2vw;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 0.5vw;
+    color: #ffefd3;
 }
 
-#ednav img {
-  width: 15vw;
-  height: 15vh;
+#ednav img{
+    width: 15vw;
+    max-width: 200px;
+    height: 15vh;
+    max-height: 150px;
+    overflow: hidden;
 }
 
 /* Achievements */
 #achievements {
-  width: 100%;
-  max-width: 60%;
-  margin: 0 auto;
-  box-sizing: border-box;
+    width: 100%;
+    max-width: 60%;
+    margin: 0 auto;
+    box-sizing: border-box;
+    padding: auto;
 }
 
-#achievements h2 {
-  font-size: 2vw;
+#achievements h2{
+    font-size: 2vw;
+}
+
+/* Employment */
+#employment{
+    padding-top: 20%;
 }
 
 /* References */
-#refs {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding-top: 5%;
+#refs{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 30%;
+}
+
+#refs th{
+    border: 2px solid maroon;
+}
+
+#refs td{ 
+    border: 2px solid maroon;
 }
 
 /* Calculator / Projects */
@@ -166,12 +194,12 @@ nav a {
   padding: 2vh 2vw;
   background-color: #fff;
   color: #111;
-  border: 4px solid #000;
+  border: 4px solid #000;              
   text-align: center;
 }
 
 main label {
-  display: block;
+  display: block;                     
   font-weight: bold;
   margin: 1.2vh auto 0.6vh;
   width: 70%;
@@ -183,71 +211,128 @@ main input {
   display: block;
   width: 70%;
   margin: 0 auto 1.6vh;
-  padding: 1.2vh 1vw;
+  padding: 1.2vh 1vw;                 
   border: 4px solid #000;
-  background-color: #fff;
+  background-color: #fff;                   
 }
 
 main button {
-  display: inline-block;
-  width: 9vw;
-  height: 9vw;
-  max-width: 8vw;
+  display: inline-block;               
+  width: 9vw;                          
+  height: 9vw;                         
+  max-width: 8vw;                       
   max-height: 8vw;
   margin: 0.8vh 0.6vw;
   border: 6px solid #000;
-  border-radius: 50%;
-  background-color: #ffd1dc;
+  border-radius: 50%;                   
+  background-color: #ffd1dc;           
   color: #000;
   font-weight: bold;
   text-align: center;
-  line-height: 9vw;
+  line-height: 9vw;                   
 }
 
-#calch1 {
-  color: #ffefd3;
-  text-align: center;
-  margin: 2vh auto;
-  font-size: 3vh;
+#calch1{
+    color: #ffefd3;
+    text-align: center;
+    margin: 2vh auto;
+    font-size: 3vh;
+}
+
+label{
+     color: #ffefd3;
+    text-align: center;
+    margin: 2vh auto;
+    font-size: 5vh;
 }
 
 /* Universal Typography */
-li {
-  list-style-type: none;
-  font-size: 3vw;
-  text-align: left;
-  margin: 1vh auto;
-  width: 70%;
+li{
+    list-style-type: none;
+    font-size: 3vw;
+    text-align: left;
+    margin: 1vh auto;
+    width: 70%;
 }
 
-p {
-  text-align: center;
-}
-
-/* Responsive */
-@media screen and (max-width: 750px) {
-  #container {
-    flex-direction: column;
-    align-items: center;
-  }
-  #sally {
-    width: 100%;
-  }
-  #sally ul {
-    flex-direction: row;
-    justify-content: space-around;
-    width: 100%;
-  }
-  #sally li {
-    font-size: calc(2px + 1.5vw);
-    border-width: 1px;
-    padding: 1%;
-  }
-  main {
-    width: 100%;
-  }
-  img {
+img {
+    display: block;
+    max-width: 100%;
     width: auto;
     height: auto;
-  }
+    margin: 2vh auto;
+    object-fit: contain;
+    overflow: hidden;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+p{
+    text-align: center;
+}
+
+h4{
+    color: #294c60;
+    text-align: center;
+}
+
+div{
+    margin: 0;
+    padding:0;
+    border: none;
+}
+
+/* Responsive Design - Requirements Implementation */
+
+/* Main width for screens bigger than 1000px: 70%, smaller: 100% */
+@media screen and (max-width: 1000px) {
+    main { 
+        width: 100%; 
+    }
+}
+
+/* Nav and header requirements for screens smaller than 750px */
+@media screen and (max-width: 750px) {
+    /* Container becomes vertical */
+    #container {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    /* Nav: 100% width and horizontal for screens < 750px */
+    #sally {
+        width: 100%;
+    }
+    
+    #sally ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+    }
+    
+    #sally li {
+        font-size: calc(2px + 1.5vw);
+        border-width: 1px;
+        padding: 1%;
+    }
+    
+    /* Main: 100% width for screens < 1000px (already covered above) */
+    main {
+        width: 100%;
+    }
+    
+    /* Header: center aligned for screens < 750px */
+    header h1{
+        text-align: center;
+    }
+    
+    /* Images responsive */
+    img{
+       width: auto;
+        height: auto;
+        overflow: hidden;
+        max-width: 100%;
+    }
 }

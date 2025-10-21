@@ -17,18 +17,18 @@ export default function Education() {
             <img id="edimg" src="/Boston.png" alt="Boston University" />
             <h2>Notable Alumni</h2>
             <ul>
-              <li>
+              {/* <li>
                 Martin Luther King
                 <img src="/MartinLutherKing.png" alt="Martin Luther King" />
-              </li>
-              <li>
+              </li> */}
+              {/* <li>
                 Alexandria Ocasio Cortez
                 <img src="/AlexandriaCortez.png" alt="Alexandria Cortez" />
-              </li>
-              <li>
+              </li> */}
+              {/* <li>
                 Kwabena the Goat Ampomah
                 <img src="/kwab.png" alt="Kwabena Ampomah" />
-              </li>
+              </li> */}
             </ul>
           </div>
         </Main>
